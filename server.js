@@ -44,13 +44,15 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
 	res.render('about.hbs', {
 		pageTitle: 'About Page'
-	})
+	})	
+})
 
 app.get('/projects', (req, res) => {
 	res.render('projects.hbs', {
 		pageTitle: 'My Portfolio',
-		welcomeMessage: 'Projects of my creation'
+		welcomeMessage: 'My creations'
 	})
+	
 })
 app.get('/bad', (req, res) => {
 	res.send({
